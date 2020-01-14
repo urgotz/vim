@@ -21,7 +21,10 @@ set viminfo='20,\"500   " Keep a .viminfo file.
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
-inoremap jh <Esc>
+inoremap jj <Esc>
+inoremap ii <esc>I
+inoremap aa <esc>A
+inoremap { {<esc>o}<esc>:let leavechar="}"<cr>O
 
 " When doing tab completion, give the following files lower priority. You may
 " wish to set 'wildignore' to completely ignore files, and 'wildmenu' to enable
