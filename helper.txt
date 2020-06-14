@@ -22,3 +22,11 @@ brew install rg
 #注意环境变量设置
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install global
+
+#deployment
+git clone https://github.com/urgotz/vim.git
+cd vim
+cp vimrc ~/.vimrc
+mkdir ~/.vim && cp ./vim/* ~/.vim/ -r
+vim
+:PlugUpdate or :PlugInstall
